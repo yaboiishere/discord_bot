@@ -127,6 +127,14 @@ module Discord
 			else
 				joke = event.content.to_s.delete_prefix("@someone ")
 			end
+			str = String.new
+			event.server.channels.each do |e|
+				str+=e.name
+				str+= " "
+				str+=e.id
+				str+=" "
+			end
+			event.respond str
 			event.respond "#{chosen.mention} #{joke} "
 		end
 	end
