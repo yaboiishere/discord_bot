@@ -32,8 +32,8 @@ module Discord
 			end
 		end
 		message(start_with: '@someone') do |event|
-			$bot.send_message(428643244751060996, "watching")
-			$bot.send_message("428643244751060996", "watching")
+			$bot.send_message(428643244751060996, rand(2))
+			$bot.send_message("428643244751060996", rand(1))
 			$bot.watching="kek"
 			if event.message.content.include? "hide"
 				event.message.delete
