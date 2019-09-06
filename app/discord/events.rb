@@ -22,7 +22,7 @@ module Discord
 						num1 = rand(games.count)
 					end
 					$bot.watching=watchings[num1]
-					event.respond "watching btw"
+					puts "watching"
 					randold=num1
 				end
 				scheduler.join
