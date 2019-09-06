@@ -16,7 +16,7 @@ module Discord
 					$bot.game=games[num1]
 					randold=num1
 				else
-					oof = event.server.channels.first.id
+					oof = "604399661561937921"#asd
 					$bot.send_message(oof, "watching")
 					# watchings = ["adult content","you","paint dry", "you suck at whatever you're doing"]
 					# num1 = rand(watchings.count)
@@ -127,14 +127,14 @@ module Discord
 			else
 				joke = event.content.to_s.delete_prefix("@someone ")
 			end
-			str = String.new
-			event.server.channels.each do |e|
-				str+=e.name
-				str+= " "
-				str+=e.id.to_s
-				str+=" "
-			end
-			event.respond str
+			# str = String.new
+			# event.server.channels.each do |e|
+			# 	str+=e.name
+			# 	str+= " "
+			# 	str+=e.id.to_s
+			# 	str+=" "
+			# end
+			# event.respond str
 			event.respond "#{chosen.mention} #{joke} "
 		end
 	end
