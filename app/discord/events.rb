@@ -5,7 +5,7 @@ module Discord
 		ready do |event|
 			scheduler = Rufus::Scheduler.new
 			randold=1
-			scheduler.every '15s' do
+			scheduler.every '2s' do
 				gameOrWatch = rand(2)
 				if gameOrWatch
 					games = ["with your mom", "with fire", "with myself", "with knifes", "with my pickle", "a tune on the world's smallest violin", "with the dark arts", "with death", "dead"]
