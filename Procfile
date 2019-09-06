@@ -1,1 +1,0 @@
-console: ruby discord_bot.rb
