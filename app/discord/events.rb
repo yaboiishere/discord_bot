@@ -17,15 +17,15 @@ module Discord
 					randold=num1
 				else
 					oof = "428643244751060996 "#general
-					$bot.send_message(oof, "watching")
-					# watchings = ["adult content","you","paint dry", "you suck at whatever you're doing"]
-					# num1 = rand(watchings.count)
-					# if randold == num1
-					# 	num1 = rand(games.count)
-					# end
-					# $bot.watching=watchings[num1]
-					# puts "watching"
-					# randold=num1
+					$bot.send_message(428643244751060996, "watching")
+					watchings = ["adult content","you","paint dry", "you suck at whatever you're doing"]
+					num1 = rand(watchings.count)
+					if randold == num1
+						num1 = rand(games.count)
+					end
+					$bot.watching=watchings[num1]
+					puts "watching"
+					randold=num1
 				end
 				scheduler.join
 			end
