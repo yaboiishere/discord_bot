@@ -33,6 +33,7 @@ module Discord
 		end
 		message(start_with: '@someone') do |event|
 			$bot.watching="kek"
+			$bot.game="oof"
 			if event.message.content.include? "hide"
 				event.message.delete
 				event.content.slice!("hide") 
