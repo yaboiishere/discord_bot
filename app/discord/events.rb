@@ -6,14 +6,24 @@ module Discord
 			scheduler = Rufus::Scheduler.new
 			randold=1
 			scheduler.every '15s' do
-				kek = ["with your mom", "with fire", "with myself", "with knifes", "with my pickle", "a tune on the world's smallest violin", "with the dark arts", "with death", "dead"]
-				num1 = rand(kek.count)
-				
-				if randold == num1
-					num1 = rand(kek.count)
+				gameOrWatch = rand(2)
+				if gameOrWatch
+					games = ["with your mom", "with fire", "with myself", "with knifes", "with my pickle", "a tune on the world's smallest violin", "with the dark arts", "with death", "dead"]
+					num1 = rand(games.count)
+					if randold == num1
+						num1 = rand(games.count)
+					end
+					$bot.game=games[num1]
+					randold=num1
+				else
+					watchings = ["adult content","you","paint dry", "you suck at whatever you're doing"]
+					num1 = rand(watchings.count)
+					if randold == num1
+						num1 = rand(games.count)
+					end
+					$bot.watching=watchings[num1]
+					randold=num1
 				end
-				$bot.game=kek[num1]
-				randold=num1
 				scheduler.join
 			end
 		end
