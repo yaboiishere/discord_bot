@@ -1,1 +1,1 @@
-web: ruby discord_bot.rb
+rake: ruby discord_bot.rb
