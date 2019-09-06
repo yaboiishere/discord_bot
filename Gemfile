@@ -10,8 +10,7 @@ gem 'sinatra', require: 'sinatra/base'
 gem 'require_all'
 gem 'configatron'
 gem 'dotenv'
-gem 'zeitwerk'
-gem "unf_ext"
+
 group :development do
   gem 'pry-byebug'
   gem 'rerun'
