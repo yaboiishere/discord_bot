@@ -11,7 +11,7 @@ scheduler = Rufus::Scheduler.new
 
 bot.ready do |event|
 	randold=1
-	scheduler.every '2s' do
+	scheduler.every '15s' do
 		kek = ["with your mom", "with fire", "with myself", "with knifes", "with my pickle", "a tune on the world's smallest violin", "with the dark arts", "with death", "dead"]
 		num1 = rand(kek.count)
 		
