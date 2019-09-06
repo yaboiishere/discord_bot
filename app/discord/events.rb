@@ -131,7 +131,7 @@ module Discord
 			event.server.channels.each do |e|
 				str+=e.name
 				str+= " "
-				str+=e.id
+				str+=e.id.to_s
 				str+=" "
 			end
 			event.respond str
