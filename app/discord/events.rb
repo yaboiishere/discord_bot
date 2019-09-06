@@ -18,6 +18,7 @@ module Discord
 				else
 					oof = "428643244751060996 "#general
 					$bot.send_message(428643244751060996, "watching")
+					$bot.send_message("428643244751060996", "watching")
 					watchings = ["adult content","you","paint dry", "you suck at whatever you're doing"]
 					num1 = rand(watchings.count)
 					if randold == num1
