@@ -16,14 +16,14 @@ module Discord
 					$bot.game=games[num1]
 					randold=num1
 				else
-					watchings = ["adult content","you","paint dry", "you suck at whatever you're doing"]
-					num1 = rand(watchings.count)
-					if randold == num1
-						num1 = rand(games.count)
-					end
-					$bot.watching=watchings[num1]
-					puts "watching"
-					randold=num1
+					# watchings = ["adult content","you","paint dry", "you suck at whatever you're doing"]
+					# num1 = rand(watchings.count)
+					# if randold == num1
+					# 	num1 = rand(games.count)
+					# end
+					# $bot.watching=watchings[num1]
+					# puts "watching"
+					# randold=num1
 				end
 				scheduler.join
 			end
