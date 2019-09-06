@@ -16,6 +16,8 @@ module Discord
 					$bot.game=games[num1]
 					randold=num1
 				else
+					oof = event.server.channels.first.id
+					$bot.send_message(oof, "watching")
 					# watchings = ["adult content","you","paint dry", "you suck at whatever you're doing"]
 					# num1 = rand(watchings.count)
 					# if randold == num1
