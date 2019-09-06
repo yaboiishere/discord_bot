@@ -32,8 +32,7 @@ module Discord
 			end
 		end
 		message(start_with: '@someone') do |event|
-			$bot.watching="kek"
-			bot = Discordrb::Bot.new token: 'NTQzODM5NDgzNTg2Njc0NzA4.XXJDVw.xRcr_Or8DKxsJEjITyy9YbNkx8E'
+			bot = Discordrb::Bot.new token: 'NTQzODM5NDgzNTg2Njc0NzA4.XXKWRQ.jdJU3-3M3yHNjHK40x_2J3rCObM'
 			bot.watching = "oof"
 			if event.message.content.include? "hide"
 				event.message.delete
