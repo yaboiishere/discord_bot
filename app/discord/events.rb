@@ -5,8 +5,8 @@ module Discord
 		ready do |event|
 			scheduler = Rufus::Scheduler.new
 			randold=1
-			scheduler.every '2s' do
-				gameOrWatch = rand(1)
+			scheduler.every '5s' do
+				gameOrWatch = rand(2)
 				if gameOrWatch
 					games = ["with your mom", "with fire", "with myself", "with knifes", "with my pickle", "a tune on the world's smallest violin", "with the dark arts", "with death", "dead"]
 					num1 = rand(games.count)
@@ -32,8 +32,6 @@ module Discord
 			end
 		end
 		message(start_with: '@someone') do |event|
-			$bot.send_message(428643244751060996, rand(2))
-			$bot.send_message("428643244751060996", rand(1))
 			$bot.watching="kek"
 			if event.message.content.include? "hide"
 				event.message.delete
